@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+    {% include 'layouts/header.html' %}
+    <body>
+        {% include 'layouts/nav.html' %}
+        <!-- ============ About Us ============= -->
+        {% include 'home/about.html' %}
+        <!-- ============ Menu  ============= -->
+        {% include 'catalog/menu.html' %}
+        <!-- ============ Our Beer  ============= -->
+        {% include 'home/beer.html' %}
+        <!-- ============ Actions snd loyal ============= -->
+        {% include 'home/actions.html' %}
+        <!-- ============ Reservation  ============= -->
+        {% include 'reservation/reservation.html' %}
+        <!-- ============ Social Section  ============= -->
+        {% include 'home/social.html' %}
+        <!-- ============ Contact Section  ============= -->
+        {% include 'home/contacts.html' %}
+        <!-- ============ Footer Section  ============= -->
+        {% include 'layouts/footer.html' %}
+
+        <script type="text/javascript" src="{% static 'js/jquery-1.10.2.min.js' %}"> </script>
+        <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}" ></script>
+        <script type="text/javascript" src="{% static 'js/jquery-1.10.2.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.mixitup.min.js' %}" ></script>
+        <script type="text/javascript" src="{% static 'js/main.js' %}" ></script>
+    </body>
+</html>
+

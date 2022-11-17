@@ -1,0 +1,57 @@
+{% load static %}
+
+<section  id="reservation"  class="description_content">
+            <div class="featured background_content">
+                <h1>Зарезервувати столик!</h1>
+            </div>
+            <div class="text-content container">
+                <div class="inner contact">
+                    <!-- Form Area -->
+                    <div class="contact-form">
+                        <!-- Form -->
+                        <form id="contact-us" method="post" action="reserve.php">
+                            <!-- Left Inputs -->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-6 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-xs-6">
+                                                <!-- Name -->
+                                                <input type="text" name="first_name" id="first_name" required="required" class="form" placeholder="Імя" />
+                                                <input type="text" name="last_name" id="last_name" required="required" class="form" placeholder="Прізвище" />
+                                                <input type="text" name="datepicker" id="datepicker" required="required" class="form" placeholder="Дата та час резерву" />
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-xs-6">
+                                                <!-- Name -->
+                                                <input type="text" name="phone" id="phone" required="required" class="form" placeholder="Контактний номер" />
+                                                <input type="email" name="email" id="email" required="required" class="form" placeholder="Email" />
+                                                <input type="text" name="subject" id="subject" required="required" class="form" placeholder="Коментарі (номер столику якщо відомий)" />
+                                            </div>
+
+                                            <div class="col-xs-6 ">
+                                                <!-- Send Button -->
+                                                <button type="submit" id="submit" name="submit" class="text-center form-btn form-btn">Зарезервувати</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 col-xs-12">
+                                        <!-- Message -->
+                                        <div class="right-text">
+                                            <h2>Ми відкриті!</h2><hr>
+                                            <p>Понеділок - вівторок: 11:00 - 20:00</p>
+                                            <p>Середа - пятниця: 11:00 - 21:00</p>
+                                            <p>Субота та неділя: 12:00 PM - 20:00 PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Clear -->
+                            <div class="clear"></div>
+                        </form>
+                    </div><!-- End Contact Form Area -->
+                </div><!-- End Inner -->
+            </div>
+        </section>

@@ -1,0 +1,50 @@
+{% load static %}
+
+<section id="contact">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2542.289172330182!2d30.5448227!3d50.4170837!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3a82f84725d122ce!2sUK%20CAFE!5e0!3m2!1sru!2sua!4v1667149647294!5m2!1sru!2sua" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="container">
+				<div class="row text-center">
+                    <h3 style="color: darkcyan">Телефонуйте або пишіть нам, ми завжди раді контакту з вами)</h3>
+                    <h5 style="color: darkcyan">322-223 223-322 232-323</h5>
+                    <h4 style="color: orange">Напишіть нам листа, якщо не вдалося додзвонитися...</h4>
+				</div>
+			</div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="inner contact">
+                            <!-- Form Area -->
+                            <div class="contact-form">
+                                <!-- Form -->
+                                <form id="contact-us" method="post" action="">
+                                    {% csrf_token %}
+                                    <!-- Left Inputs -->
+                                        <div class="col-md-6 ">
+                                            <!-- Name -->
+                                            <input type="text" name="name" id="name" required="required" class="form" placeholder="Ваше Ім'я" />
+                                            <!-- Email -->
+                                            <input type="email" name="email" id="email" required="required" class="form" placeholder="ВАШ Email" />
+                                            <!-- Subject -->
+                                            <input type="text" name="subject" id="subject" required="required" class="form" placeholder="Тема звернення" />
+                                        </div><!-- End Left Inputs -->
+                                        <!-- Right Inputs -->
+                                        <div class="col-md-6">
+                                            <!-- Message -->
+                                            <textarea name="message" id="message" class="form textarea"  placeholder="Текст пишіть сюди!"></textarea>
+                                        </div><!-- End Right Inputs -->
+                                        <!-- Bottom Submit -->
+                                        <div class="relative fullwidth col-xs-12">
+                                            <!-- Send Button -->
+                                            <button type="submit" id="submit" name="submit" class="form-btn">НАДІСЛАТИ!</button>
+                                        </div><!-- End Bottom Submit -->
+                                        <!-- Clear -->
+                                        <div class="clear"></div>
+                                </form>
+                            </div><!-- End Contact Form Area -->
+                        </div><!-- End Inner -->
+                    </div>
+                </div>
+            </div>
+        </section>
